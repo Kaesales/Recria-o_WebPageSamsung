@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'SamsungOne',arial,sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    width: 7.9rem;
+    height: auto;
+    margin-bottom: 0;
+    
+}
+
+
+#navbar{
+    justify-content: center;
+    align-items: center;
+}
+
+.groupmain{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6rem;
+    
+}
+
+.textmenu{
+    display: flex;
+    gap:4rem;
+}
+
+.menu{
+    font-size: 14px;
+    font-weight: 450;
+    gap:1.25rem;
+    display: flex;
+    list-style: none;
+}
+
+.icons{
+    display: flex;
+    gap:2.5rem;
+}
+
+.ri-arrow-right-up-line{
+    margin-left: 0;
+    padding-left: 0;
+}
