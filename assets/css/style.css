@@ -41,15 +41,39 @@ body{
     font-weight: 450;
     gap:1.25rem;
     display: flex;
+    font-weight: 600;
     list-style: none;
 }
 
 .icons{
     display: flex;
-    gap:2.5rem;
+    gap:1.5rem;
 }
 
 .ri-arrow-right-up-line{
     margin-left: 0;
     padding-left: 0;
+}
+#setores-de-produtos{
+    margin:35px;
+}
+#setores-de-produtos-int{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.setorclass, img{
+    width: 82px;
+}
+.setorclass{
+   display: flex;
+   flex-direction: column;
+   width: 125px;
+   text-align: center;
+   font-size: 14px;
+   font-weight: 600;
+   align-items: center;
+   gap: 1rem;
 }
