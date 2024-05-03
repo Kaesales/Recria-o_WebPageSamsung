@@ -8,6 +8,7 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"/>
     <script async src="https://basicons.xyz/embed.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Samsung</title>
 </head>
 <body>
@@ -74,11 +75,40 @@
         </section>
 
         <section id="secondcarousel">
-            <div><img class="imagessecondcarousel" src="assets/images/Galaxy Book4.webp" alt="" ></div>
-            <div><img class="imagessecondcarousel" src="assets/images/Samsung AI tv.webp" alt=""></div>
-            <div><img class="imagessecondcarousel" src="assets/images/galaxy m55 5G.webp" alt=""></div>
-            <div><img class="imagessecondcarousel" src="assets/images/Novas Geladeiras Evolution.webp" alt=""></div>
-           </section>
+                <div id="slider">
+                    <input type="radio" name="radio_button" id="radio1">
+                    <input type="radio" name="radio_button" id="radio2">
+                    <input type="radio" name="radio_button" id="radio3">
+                    <input type="radio" name="radio_button" id="radio4">
+
+                     <div class="images_slider">
+                   <!-- <i class="fa-solid fa-chevron-left" style="color: #ffffff;" id="arrow_left"></i> <i class="fa-solid fa-chevron-right" style="color: #ffffff;" id="arrow_right"></i>-->
+                    <div class="slide_first"><img class="imagessecondcarousel" src="assets/images/Galaxy Book4.webp" alt="" ></div>
+                    <div class="slide"><img class="imagessecondcarousel" src="assets/images/Samsung AI tv.webp" alt=""></div>
+                    <div class="slide"><img class="imagessecondcarousel" src="assets/images/galaxy m55 5G.webp" alt=""></div>
+                    <div class="slide"><img class="imagessecondcarousel" src="assets/images/Novas Geladeiras Evolution.webp" alt=""></div>
+                   
+                    </div> 
+
+                    <div class="navigation_auto">
+                        <div class="button1"></div>
+                        <div class="button2"></div>
+                        <div class="button3"></div>
+                        <div class="button4"></div>
+                    </div>
+                 </div>
+               
+
+                <!--label serve para legendar uma informação sobre um elemento-->
+                <div class="info_navigation">
+                    <label for="radio1" class="info_button"></label>
+                    <label for="radio2" class="info_button"></label>
+                    <label for="radio3" class="info_button"></label>
+                    <label for="radio4" class="info_button"></label>
+                </div>
+            
+        </section>
+  
        </main>
 </body>
 </html>

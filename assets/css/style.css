@@ -98,9 +98,52 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin: 0 auto;
+    width: 100%;
 }
 
-.imagessecondcarousel{
+#slider{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider input{
+display: none;
+}
+
+.images_slider{
+    position: relative;
+    width: 100%;
+    display:flex;
     width: 1450px;
+
 }
+.imagessecondcarousel{
+    position: absolute;
+    width: 1450px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.info_navigation{
+position: absolute;
+width: 1450px;
+display: flex;
+justify-content: center;
+margin-top: 600px;
+gap:1rem;
+}
+
+.info_button{
+    width: 140px;
+    padding:0.2px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
