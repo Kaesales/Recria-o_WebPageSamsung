@@ -1,3 +1,33 @@
+//código para engrenar o primeiro carousel
+let control  = 1;
+const totalText = 3;
+const carouselOne = document.getElementById("groupcarousel");
+
+
+setInterval(function(){ 
+    nextText()
+}, 3000);
+
+function nextText(){
+control++;
+if(control > totalText){
+carouselOne.style.transition = 'none';
+carouselOne.style.transform = 'translateX(0)'
+control = 1;
+
+setTimeout(()=>{
+carouselOne.style.transition = '.6s ease';
+carouselOne.style.transform = `translateX(-${control * 25}%)`
+},50)
+
+}else{
+carouselOne.style.transform = `translateX(-${control * 25}%)`
+}
+}
+
+
+
+//código para engrenar o segundo carousel
 let count = 1;
 document.getElementById("radio1").checked = true;
 const slideshow = document.getElementById('slider');
