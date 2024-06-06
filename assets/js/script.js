@@ -5,15 +5,14 @@ const slideshow = document.getElementById('slider');
 
 setInterval(function(){
 nextImage();
-}, 5000)
+}, 4000)
 
+
+const texto =  document.querySelectorAll('.text_navigation');
 
 function nextImage(){
     count++;
     if(count>4){
-       
-        slideshow.style.transition = 'none';
-        slideshow.style.transform = `translateX(${0})`;
         count = 1;
         
 
@@ -32,5 +31,25 @@ function nextImage(){
 
 }
 document.getElementById("radio" + count).checked = true;
-    
 }
+
+
+
+
+
+
+
+document.querySelectorAll('.info_button').forEach(infoButton => {
+    const targetId = infoButton.getAttribute('data-target');
+    const textNavigation = document.querySelector(`.text_navigation[data-target="${targetId}"]`);
+    
+    infoButton.addEventListener('mouseover', () => {
+        textNavigation.style.opacity = '1';
+    });
+
+    infoButton.addEventListener('mouseout', () => {
+        textNavigation.style.opacity = '0';
+    });
+});
+
+
