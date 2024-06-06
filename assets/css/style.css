@@ -294,6 +294,13 @@ gap:1.8rem;
     margin-bottom:5px;
 }
 
+.text_navigation{
+    margin-bottom:5px;
+    color: white;
+    transition: 0.4s;
+    opacity: 0;
+ }
+ 
 .buttonnavigation{
     width: 155px;
     padding:0.8px;
