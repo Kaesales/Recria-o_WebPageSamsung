@@ -1,34 +1,39 @@
 let count = 1;
 document.getElementById("radio1").checked = true;
-
+const slideshow = document.getElementById('slider')
 setInterval(function(){
 nextImage();
 }, 4000)
 
 
 const texto =  document.querySelectorAll('.text_navigation');
-function nextImage(){
 
-    count++;
-    if(count>4){
-        count = 1;
+function nextImage(){
+        count++;
+        if(count>4){
+           
+            slideshow.style.transition = 'none';
+            slideshow.style.transform = `translateX(${0})`;
+            count = 1;
+            
+    
+            setTimeout(() => {
+                    slideshow.style.transition = '.6s ease';
+                    slideshow.style.transform = `translateX(-${ count * 20}%)`
+            }, 50);
+            
+            
+        
+       
+        
+    }else{
+         slideshow.style.transition = '.6s ease';
+         slideshow.style.transform = `translateX(-${ count * 20}%)`;
+    
+    }
+    document.getElementById("radio" + count).checked = true;
         
     }
-
-    document.getElementById("radio" + count).checked = true;
-
-    if(radio3.checked){
-        texto.forEach(function(texto) {
-            texto.style.color = 'black';
-        });
-    }else{
-        texto.forEach(function(texto) {
-            texto.style.color = '';
-        });
-    }
-
-}
-
 
 
 document.getElementById("prevButton").addEventListener("click", prevImage);
