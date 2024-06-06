@@ -151,6 +151,7 @@ input{
 
 .slide_first, .slide{
 width:20%; /*representa 25% de todo elemento pai, o pai tem 400%. Isso significa que cada imagem terá 100% de largura*/
+height: 100%;
 transition: .6s;
 position:relative;
 }
@@ -251,37 +252,34 @@ height: 15px;
 
 
 /*botoes da area inferior do slider*/
-.info_navigation{
-position: absolute;
-bottom:30px;
-left: 50%;
-transform: translate(-50%);
-display:flex;
-gap:1.8rem;
-}
-
-
-
-.info_button{
-    width: 138px;
-    height: 25px;
-    padding:10px;
-    background:transparent;
-    cursor: pointer;
-    transition: 1s;
-  
-}
-
-.navigation_auto{
+.info_navigation {
     position: absolute;
-    bottom:50px;
+    bottom: 30px;
     left: 50%;
     transform: translate(-50%);
-    display:flex;
-    gap:2rem; 
+    display: flex;
+    gap: 1.8rem;
 }
 
-.buttonleg{
+.info_button {
+    width: 138px;
+    height: 25px;
+    padding: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation_auto {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 2rem;
+}
+
+.buttonleg {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,41 +287,36 @@ gap:1.8rem;
     font-weight: 500;
 }
 
-
-.buttonleg p{
-    margin-bottom:5px;
-}
-
-.text_navigation{
-    margin-bottom:5px;
+.text_navigation {
+    margin-bottom: 5px;
     color: white;
     transition: 0.4s;
     opacity: 0;
- }
- 
-.buttonnavigation{
+}
+
+.buttonnavigation {
     width: 155px;
-    padding:0.8px;
+    padding: 0.8px;
     background-color: rgba(243, 243, 243, 0.465);
     cursor: pointer;
     transition: 1s;
 }
 
-#radio1:checked ~ slide first{
+#radio1:checked ~ #slider{
     transform: translateX(0);
     
 }
 
-#radio2:checked ~ slide first {
+#radio2:checked ~ #slider {
     transform: translateX(-20%);
     
 }
 
-#radio3:checked ~ slide first{
+#radio3:checked ~ #slider{
     transform:translateX(-40%);
 }
 
-#radio4:checked ~ slide first{
+#radio4:checked ~ #slider{
     transform:translateX(-60%);
 }
 
