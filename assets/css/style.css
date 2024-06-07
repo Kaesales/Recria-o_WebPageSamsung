@@ -43,15 +43,32 @@ body{
 .textmenu{
     display: flex;
     gap:4rem;
+
 }
 
 .menu{
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    gap:1.25rem;
+    gap:1rem;
     display: flex;
     font-weight: 450;
     list-style: none;
+    
+}
+
+.navText{
+transition: .1s ease;
+padding : 6px;
+border-radius: 13px;
+color:black;
+text-decoration: none; 
+}
+
+.navText:hover {
+color: white;
+background-color: black;
+padding : 6px;
+border-radius: 13px;
 }
 
 .icons{
